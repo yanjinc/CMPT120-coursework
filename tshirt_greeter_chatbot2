@@ -2,26 +2,23 @@
 ## assignment2
 # cmpt120
 # yanjin chen
-#
+
 
 # greet the user
 print("Hi! I am the T-shirt Greeter Chatbot 2! ")
-#
+
 # ask the user for a name
 name = input("your first name and last name (one space in between)? ==>")
-#
-#
+
 words = name.split()
 letters = [word[0].upper() for word in words]
 print("Welcome", "".join(letters), "!!!")
-#
-#ask the user for age
+
+# ask the user for age
 age = int(input("Please type your age ==>"))
-#
+
 title, handle = name.split()
-#
-#
-#
+
 if handle[0].upper() == "A" or handle[0].upper() == "B":
     mssg = "Queue A or B "
 
@@ -45,10 +42,10 @@ else:
         mssg = mssg + "(youth)"
     else:
         mssg = mssg + "(adult)"
-#
+
 print("You should go to: " + mssg)
-#
-#
+
+
 import random
 import math
 
